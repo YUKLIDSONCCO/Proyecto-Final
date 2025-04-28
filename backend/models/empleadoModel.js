@@ -17,9 +17,11 @@ export const createEmpleado = async (empleado) => {
     [nombre, apellido, dni, cargo, telefono, fecha_ingreso]
   );
   return { id: result.insertId, ...empleado };
+
 };
 
 export const updateEmpleado = async (id, empleado) => {
+  
   const { nombre, apellido, dni, cargo, telefono, fecha_ingreso } = empleado;
   await db.execute(
     'UPDATE empleados SET nombre = ?, apellido = ?, dni = ?, cargo = ?, telefono = ?, fecha_ingreso = ? WHERE id = ?',

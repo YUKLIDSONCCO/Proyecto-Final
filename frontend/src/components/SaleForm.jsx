@@ -1,4 +1,5 @@
 // ... importaciones ...
+//los cruds que faltaba completar agregando datos escenciales 
 import { useState, useEffect, useRef } from "react";
 import axios from "axios";
 

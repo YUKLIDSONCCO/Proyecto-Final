@@ -1,10 +1,12 @@
 // backend/models/proveedoresModel.js
+//los provedores para el sql backend
 import db from './db.js';
 
 export const getProveedores = async () => {
   const [rows] = await db.query('SELECT * FROM proveedores');
   return rows;
 };
+
 
 export const getProveedorById = async (id) => {
   const [rows] = await db.query('SELECT * FROM proveedores WHERE id = ?', [id]);

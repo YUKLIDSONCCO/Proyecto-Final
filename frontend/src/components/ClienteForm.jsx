@@ -23,10 +23,10 @@ function ClienteForm({ clienteEdit, setClienteEdit, onClienteAgregado }) {
     try {
       if (clienteEdit) {
         // ✅ Editar
-        await axios.put(`http://localhost:3001/clientes/${clienteEdit.id}`, nuevoCliente);
+        await axios.put(`http://localhost:3000/api/clientes/${clienteEdit.id}`, nuevoCliente);
       } else {
         // Crear nuevo
-        await axios.post('http://localhost:3001/clientes', nuevoCliente);
+        await axios.post('http://localhost:3000/api/clientes', nuevoCliente);
       }
 
       onClienteAgregado();

@@ -45,7 +45,7 @@ function App() {
   return (
     <div className="container py-4">
       <div className="text-center mb-4">
-        <h1 className="display-4">💊✨ Farmacia Vida y Salud 😷✨ </h1>
+        <h1 className="display-4">✨ Farmacia Vida y Salud ✨ </h1>
         <p className="lead">Sistema de Gestión de Inventario y Ventas</p>
         <p className="lead">Bienvenido, {usuarioAutenticado.nombre}</p>
         <button className="btn btn-outline-danger" onClick={handleLogout}>

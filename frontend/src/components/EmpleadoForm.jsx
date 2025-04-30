@@ -35,10 +35,10 @@ function EmpleadoForm({ empleadoEdit, setEmpleadoEdit }) {
     e.preventDefault();
     try {
       if (empleadoEdit) {
-        await axios.put(`/api/empleados/${empleadoEdit.id}`, formData);
+        await axios.put(`http://localhost:3000/api/empleados/${empleadoEdit.id}`, formData);
         alert('Empleado actualizado correctamente');
       } else {
-        await axios.post('/api/empleados', formData);
+        await axios.post('http://localhost:3000/api/empleados', formData);
         alert('Empleado registrado correctamente');
       }
       setFormData({

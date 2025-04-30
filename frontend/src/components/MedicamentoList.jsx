@@ -78,7 +78,7 @@ const MedicamentoList = () => {
                 <button className="btn btn-sm btn-primary me-2" onClick={() => handleEditClick(med)}>
                   Editar
                 </button>
-                <button className="btn btn-sm btn-danger" onClick={() => handleDelete(med.id)}>
+                <button className="btn btn-success" onClick={() => handleDelete(med.id)}>
                   Eliminar
                 </button>
               </td>

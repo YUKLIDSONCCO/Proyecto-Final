@@ -45,7 +45,7 @@ const MedicamentoForm = () => {
     e.preventDefault();
     try {
       await axios.post('http://localhost:3000/api/medicamentos', form);
-      alert('✅ Medicamento registrado correctamente');
+      alert('Medicamento registrado');
       setForm({
         nombre_comercial: '',
         nombre_generico: '',

@@ -58,7 +58,7 @@ const ProveedorList = () => {
               <td>{prov.direccion}</td>
               <td>
                 <button className="btn btn-warning btn-sm me-2" onClick={() => handleEdit(prov)}>Editar</button>
-                <button className="btn btn-danger btn-sm" onClick={() => handleDelete(prov.id)}>Eliminar</button>
+                <button className="btn btn-success" onClick={() => handleDelete(prov.id)}>Eliminar</button>
               </td>
             </tr>
           ))}

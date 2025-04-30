@@ -32,7 +32,7 @@ function ProductList({ products, onDelete, onEdit }) {
                     Editar
                   </button>
                   <button
-                    className="btn btn-danger btn-sm"
+                    className="btn btn-success"
                     onClick={() => onDelete(producto.id)}
                   >
                     Eliminar

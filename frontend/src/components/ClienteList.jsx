@@ -69,7 +69,7 @@ const ClienteList = forwardRef((_, ref) => {
 </button>
 
                 <button
-                  className="btn btn-danger btn-sm"
+                  className="btn btn-success"
                   onClick={() => handleEliminar(cliente.id)}
                 >
                   Eliminar

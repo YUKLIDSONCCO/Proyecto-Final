@@ -14,7 +14,8 @@ function Login({ onLoginSuccess }) {
       const empleado = await loginEmpleado(usuario, contrasena);
       onLoginSuccess(empleado);
     } catch (err) {
-      setError('Credenciales incorrectas');
+        console.error('Error de login:', err.message);
+        setError(err.message);
     }
   };
 

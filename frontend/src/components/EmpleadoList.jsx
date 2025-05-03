@@ -49,7 +49,11 @@ function EmpleadoList({ onEdit }) {
             <td>{emp.fecha_ingreso}</td>
             <td>
               <button className="btn btn-sm btn-warning me-2" onClick={() => onEdit(emp)}>Editar</button>
+<<<<<<< HEAD
               <button className="btn btn-success" onClick={() => handleDelete(emp.id)}>Eliminar</button>
+=======
+              <button className="btn btn-sm btn-danger" onClick={() => handleDelete(emp.id)}>Eliminar</button>
+>>>>>>> 59b922f247766e267bd0b36ed15c08f0914afd2e
             </td>
           </tr>
         ))}

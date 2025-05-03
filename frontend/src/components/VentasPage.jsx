@@ -20,7 +20,11 @@ function VentasPage() {
 
   return (
     <div className="container mt-4">
+<<<<<<< HEAD
       <h2 className="mb-4"> Nueva Venta</h2>
+=======
+      <h2 className="mb-4">📦 Nueva Venta</h2>
+>>>>>>> 59b922f247766e267bd0b36ed15c08f0914afd2e
       <SaleForm products={medicamentos} />
     </div>
   );

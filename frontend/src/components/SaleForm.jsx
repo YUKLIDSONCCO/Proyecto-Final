@@ -1,4 +1,8 @@
 // ... importaciones ...
+<<<<<<< HEAD
+=======
+//los cruds que faltaba completar agregando datos escenciales 
+>>>>>>> 59b922f247766e267bd0b36ed15c08f0914afd2e
 import { useState, useEffect, useRef } from "react";
 import axios from "axios";
 

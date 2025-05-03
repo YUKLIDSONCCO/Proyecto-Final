@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useState, useRef, useEffect } from 'react';
 import ClienteForm from './components/ClienteForm';
 import ClienteList from './components/ClienteList';
@@ -13,11 +14,28 @@ import Login from './components/Login';
 
 function App() {
   const [usuarioAutenticado, setUsuarioAutenticado] = useState(null);
+=======
+import './App.css';
+import { useState, useRef } from 'react';
+import MedicamentoForm from './components/MedicamentoForm';
+import MedicamentoList from './components/MedicamentoList';
+import SaleForm from './components/SaleForm';
+import DetalleVentaForm from './components/DetalleVentaForm';
+import ClienteForm from './components/ClienteForm';
+import ClienteList from './components/ClienteList';
+import ProveedorForm from './components/ProveedorForm';
+import ProveedorList from './components/ProveedorList';
+import EmpleadoForm from './components/EmpleadoForm';
+import EmpleadoList from './components/EmpleadoList';
+
+function App() {
+>>>>>>> 59b922f247766e267bd0b36ed15c08f0914afd2e
   const [seccionActiva, setSeccionActiva] = useState('clientes');
   const [empleadoEdit, setEmpleadoEdit] = useState(null);
   const [clienteEdit, setClienteEdit] = useState(null);
   const clienteListRef = useRef();
 
+<<<<<<< HEAD
   // Recuperar sesión desde localStorage al cargar la app
   useEffect(() => {
     const usuarioGuardado = localStorage.getItem('usuario');
@@ -51,6 +69,13 @@ function App() {
         <button className="btn btn-outline-danger" onClick={handleLogout}>
           Cerrar sesión
         </button>
+=======
+  return (
+    <div className="container py-4">
+      <div className="text-center mb-4">
+        <h1 className="display-4">💊 Farmacia Vida y salud</h1>
+        <p className="lead">Sistema de Gestión de Inventario y Ventas</p>
+>>>>>>> 59b922f247766e267bd0b36ed15c08f0914afd2e
       </div>
 
       {/* Panel de navegación */}

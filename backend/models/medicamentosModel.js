@@ -94,4 +94,8 @@ export const deleteMedicamento = async (id) => {
     console.error('❌ Error al eliminar medicamento:', error.message);
     throw new Error('No se pudo eliminar el medicamento.');
   }
+<<<<<<< HEAD
 };
+=======
+};
+>>>>>>> 59b922f247766e267bd0b36ed15c08f0914afd2e

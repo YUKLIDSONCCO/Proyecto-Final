@@ -6,7 +6,11 @@ import React, {
 } from 'react';
 import axios from 'axios';
 
+<<<<<<< HEAD
 const ClienteList = forwardRef((_, ref) => {
+=======
+const ClienteList = forwardRef(({ onEdit }, ref) => {
+>>>>>>> 59b922f247766e267bd0b36ed15c08f0914afd2e
   const [clientes, setClientes] = useState([]);
 
   // Función para obtener la lista de clientes
@@ -61,6 +65,7 @@ const ClienteList = forwardRef((_, ref) => {
               <td>{cliente.telefono}</td>
               <td>{cliente.direccion}</td>
               <td>
+<<<<<<< HEAD
               <button
   className="btn btn-sm btn-warning me-2"
   onClick={() => onEdit(cliente)} // ✅ pasa el cliente al padre
@@ -70,6 +75,16 @@ const ClienteList = forwardRef((_, ref) => {
 
                 <button
                   className="btn btn-success"
+=======
+                <button
+                  className="btn btn-sm btn-warning me-2"
+                  onClick={() => onEdit(cliente)} // ✅ llama a la función pasada como prop
+                >
+                  Editar
+                </button>
+                <button
+                  className="btn btn-danger btn-sm"
+>>>>>>> 59b922f247766e267bd0b36ed15c08f0914afd2e
                   onClick={() => handleEliminar(cliente.id)}
                 >
                   Eliminar

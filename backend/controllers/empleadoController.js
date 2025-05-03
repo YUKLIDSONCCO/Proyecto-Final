@@ -33,8 +33,12 @@ import {
       const nuevoEmpleado = await createEmpleado(req.body);
       res.status(201).json(nuevoEmpleado);
     } catch (error) {
+<<<<<<< HEAD
       console.error('Error al crear empleado:', error);
       res.status(500).json({ error: 'Error al crear empleado', details: error.message });
+=======
+      res.status(500).json({ error: 'Error al crear empleado' });
+>>>>>>> 59b922f247766e267bd0b36ed15c08f0914afd2e
     }
   };
   

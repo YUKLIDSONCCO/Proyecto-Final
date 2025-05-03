@@ -1,4 +1,8 @@
 // backend/models/proveedoresModel.js
+<<<<<<< HEAD
+=======
+//los provedores para el sql backend
+>>>>>>> 59b922f247766e267bd0b36ed15c08f0914afd2e
 import db from './db.js';
 
 export const getProveedores = async () => {
@@ -6,6 +10,10 @@ export const getProveedores = async () => {
   return rows;
 };
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 59b922f247766e267bd0b36ed15c08f0914afd2e
 export const getProveedorById = async (id) => {
   const [rows] = await db.query('SELECT * FROM proveedores WHERE id = ?', [id]);
   return rows[0];

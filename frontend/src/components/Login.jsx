@@ -20,7 +20,7 @@ function Login({ onLoginSuccess }) {
   };
 
   return (
-    <div className="container d-flex justify-content-center align-items-center vh-100">
+    <div className="d-flex justify-content-center align-items-center min-vh-100 bg-light">
       <div className="card p-4 shadow" style={{ maxWidth: '400px', width: '100%' }}>
         <h2 className="mb-4 text-center">Iniciar Sesión</h2>
         {error && <div className="alert alert-danger">{error}</div>}

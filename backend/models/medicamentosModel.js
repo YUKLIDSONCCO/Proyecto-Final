@@ -1,4 +1,4 @@
-import db from '../models/db';
+import db from './db.js';
 
 export const getAllMedicamentos = async () => {
   const [rows] = await db.execute('SELECT * FROM medicamentos');

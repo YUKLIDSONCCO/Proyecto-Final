@@ -1,5 +1,5 @@
 // backend/models/clientesModel.js
-import db from '../models/db';
+import db from './db.js';
 
 export const getClientes = async () => {
   const [rows] = await db.query('SELECT * FROM clientes');

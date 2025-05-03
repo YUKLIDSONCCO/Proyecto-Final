@@ -1,5 +1,4 @@
-import db from '../models/db';
-import bcrypt from 'bcryptjs';
+import db from './db.js';
 
 export const getAllEmpleados = async () => {
   const [rows] = await db.execute('SELECT * FROM empleados');
@@ -12,11 +11,10 @@ export const getEmpleadoById = async (id) => {
 };
 
 export const createEmpleado = async (empleado) => {
-  const { nombre, apellido, dni, cargo, telefono, fecha_ingreso, usuario, contrasena} = empleado;
-  const hashedPassword = await bcrypt.hash(contrasena, 10);  // Hashea la contraseña
+  const { nombre, apellido, dni, cargo, telefono, fecha_ingreso } = empleado;
   const [result] = await db.execute(
-    'INSERT INTO empleados (nombre, apellido, dni, cargo, telefono, fecha_ingreso, usuario, contrasena) VALUES (?, ?, ?, ?, ?, ?,?,?)',
-    [nombre, apellido, dni, cargo, telefono, fecha_ingreso, usuario, hashedPassword]
+    'INSERT INTO empleados (nombre, apellido, dni, cargo, telefono, fecha_ingreso) VALUES (?, ?, ?, ?, ?, ?)',
+    [nombre, apellido, dni, cargo, telefono, fecha_ingreso]
   );
   return { id: result.insertId, ...empleado };
 };

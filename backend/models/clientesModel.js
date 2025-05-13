@@ -1,4 +1,7 @@
 // backend/models/clientesModel.js
+
+//Los MODELS SEestan actualizando
+
 import db from './db.js';
 
 export const getClientes = async () => {
@@ -10,6 +13,7 @@ export const getClienteById = async (id) => {
   const [rows] = await db.query('SELECT * FROM clientes WHERE id = ?', [id]);
   return rows[0];
 };
+
 
 export const createCliente = async (cliente) => {
   const { nombre, apellido, dni, telefono, direccion } = cliente;
